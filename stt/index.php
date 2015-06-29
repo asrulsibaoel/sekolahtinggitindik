@@ -10,9 +10,10 @@ include_once 'include/lib.php';
 connectMysql();
 
 
-$base_url = "http://localhost/stt";
+$base_url = "http://localhost/sekolahtinggitindik/stt";
 
 $link = preg_replace("[']", "", $_SERVER['REQUEST_URI']);
+
 $url = (explode('/', $link));
 $urlController = isset($url[2]) ? $url[2] : '';
 $urlAction = isset($url[3]) ? $url[3] : '';
@@ -44,4 +45,5 @@ if(isset($_SESSION['id'])){
 }else{
 	include 'views/default/login.php';
 }
+echo $link;
 ?>

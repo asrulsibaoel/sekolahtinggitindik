@@ -53,6 +53,14 @@
             <li><a href="<?php echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>
             <?php
           }
+          if($_SESSION['level'] == "dosen"){
+            ?>
+            <li><a href="<?php echo $base_url?>/site/home"><i class="icon-home"></i><span>Home</span></a></li>
+            <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Jadwal</span></a></li>
+            <li><a href="<?php echo $base_url?>/pengumuman/lihat"><i class="glyphicon glyphicon-file"></i><span>Pengumuman</span></a></li>
+            <li><a href="<?php echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>
+            <?php
+          }
           ?>
           </ul>
           <div class="sidebar-footer clearfix">
