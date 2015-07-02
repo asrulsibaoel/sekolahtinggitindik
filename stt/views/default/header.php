@@ -50,7 +50,7 @@
             <li><a href="<?php echo $base_url?>/khs/lihat"><i class="glyphicon glyphicon-file"></i><span>KHS</span></a></li>
             <li><a href="<?php echo $base_url?>/khs/transkrip"><i class="glyphicon glyphicon-file"></i><span>Transkrip Nilai</span></a></li>
             <li><a href="<?php echo $base_url?>/pengumuman/lihat"><i class="glyphicon glyphicon-file"></i><span>Pengumuman</span></a></li>
-            <li><a href="<?php echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>
+        <!--            <li><a href="<?php // echo $base_url ?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>-->
             <?php
           }
           if($_SESSION['level'] == "dosen"){
@@ -60,7 +60,7 @@
             <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Cek Nilai Mahasiswa</span></a></li>
             <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Cek KRS</span></a></li>
             <li><a href="<?php echo $base_url?>/pengumuman/lihat"><i class="glyphicon glyphicon-file"></i><span>Pengumuman</span></a></li>
-            <li><a href="<?php echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>
+            <!--<li><a href="<?php // echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>-->
             <?php
           }
           ?>
