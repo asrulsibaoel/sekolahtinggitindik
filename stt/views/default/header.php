@@ -56,7 +56,9 @@
           if($_SESSION['level'] == "dosen"){
             ?>
             <li><a href="<?php echo $base_url?>/site/home"><i class="icon-home"></i><span>Home</span></a></li>
-            <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Jadwal</span></a></li>
+            <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Jadwal Kuliah</span></a></li>
+            <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Cek Nilai Mahasiswa</span></a></li>
+            <li><a href="<?php echo $base_url?>/jadwal/lihat"><i class="glyphicon glyphicon-file"></i><span>Cek KRS</span></a></li>
             <li><a href="<?php echo $base_url?>/pengumuman/lihat"><i class="glyphicon glyphicon-file"></i><span>Pengumuman</span></a></li>
             <li><a href="<?php echo $base_url?>/kalender/lihat"><i class="glyphicon glyphicon-file"></i><span>Kalender Akademik</span></a></li>
             <?php
@@ -88,7 +90,7 @@
               <li class="dropdown" id="user-header">
                 <a href="#" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                 <img src="<?php echo $base_url?>/assets/theme/images/avatars/user1.png" alt="user image">
-                <span class="username">Admin</span>
+                <span class="username"><?php echo ucwords($_SESSION['username']);?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li>

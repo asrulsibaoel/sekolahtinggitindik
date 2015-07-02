@@ -9,6 +9,7 @@
             $_SESSION['login'] = TRUE;
             $_SESSION['id'] = $user_data['id'];
             $_SESSION['level'] = $user_data['level'];
+            $_SESSION['username'] = $user_data['username'];
             return TRUE;
         } else {
             return FALSE;

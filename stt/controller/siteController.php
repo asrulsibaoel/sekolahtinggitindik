@@ -61,6 +61,7 @@ if ($urlAction == "logout") {
     unset($_SESSION['id']);
     unset($_SESSION['level']);
     unset($_SESSION['login']);
+    unset($_SESSION['username']);
 
     go($base_url);
 }
